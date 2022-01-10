@@ -142,5 +142,21 @@ public class addProduct extends JFrame {
 		JLabel lblListeDesProduits = new JLabel("Liste des produits");
 		lblListeDesProduits.setBounds(36, 399, 126, 16);
 		contentPane.add(lblListeDesProduits);
+		
+		JButton btnRetour = new JButton("Retour");
+		btnRetour.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Home home = new Home();
+				home.setVisible(true);
+				this.hide();
+			}
+
+			private void hide() {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		btnRetour.setBounds(12, 13, 97, 25);
+		contentPane.add(btnRetour);
 	}
 }
