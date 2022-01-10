@@ -1,23 +1,26 @@
 package views;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
 import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
-import javax.swing.JButton;
+import javax.swing.border.EmptyBorder;
 
 public class addOrder extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textFieldOrderProductName;
-	private JTextField textFieldOrderClientName;
+	private JTextField txt_OrderProductName;
+	private JTextField txt_OrderClientName;
 	private JTextField textField;
 
 	/**
@@ -75,30 +78,30 @@ public class addOrder extends JFrame {
 		JList list = new JList();
 		scrollPane.setViewportView(list);
 		
-		textFieldOrderProductName = new JTextField();
-		textFieldOrderProductName.setBounds(177, 114, 228, 22);
-		contentPane.add(textFieldOrderProductName);
-		textFieldOrderProductName.setColumns(10);
+		txt_OrderProductName = new JTextField();
+		txt_OrderProductName.setBounds(177, 114, 490, 22);
+		contentPane.add(txt_OrderProductName);
+		txt_OrderProductName.setColumns(10);
 		
-		textFieldOrderClientName = new JTextField();
-		textFieldOrderClientName.setBounds(176, 161, 229, 22);
-		contentPane.add(textFieldOrderClientName);
-		textFieldOrderClientName.setColumns(10);
+		txt_OrderClientName = new JTextField();
+		txt_OrderClientName.setBounds(176, 161, 491, 22);
+		contentPane.add(txt_OrderClientName);
+		txt_OrderClientName.setColumns(10);
 		
-		JButton btnAjouter = new JButton("Ajouter");
-		btnAjouter.setBounds(519, 113, 175, 25);
-		contentPane.add(btnAjouter);
+		JButton btnAddOrder = new JButton("Ajouter");
+		btnAddOrder.setBounds(73, 551, 161, 25);
+		contentPane.add(btnAddOrder);
 		
 		JButton btnModifier = new JButton("Modifier");
-		btnModifier.setBounds(144, 551, 139, 25);
+		btnModifier.setBounds(246, 551, 139, 25);
 		contentPane.add(btnModifier);
 		
 		JButton btnSupprimer = new JButton("Supprimer");
-		btnSupprimer.setBounds(319, 551, 132, 25);
+		btnSupprimer.setBounds(397, 551, 132, 25);
 		contentPane.add(btnSupprimer);
 		
 		JButton btnAnnuler = new JButton("Annuler");
-		btnAnnuler.setBounds(482, 551, 139, 25);
+		btnAnnuler.setBounds(541, 551, 139, 25);
 		contentPane.add(btnAnnuler);
 		
 		JLabel lblRechercher = new JLabel("Rechercher");
@@ -106,12 +109,12 @@ public class addOrder extends JFrame {
 		contentPane.add(lblRechercher);
 		
 		textField = new JTextField();
-		textField.setBounds(144, 307, 149, 22);
+		textField.setBounds(144, 307, 402, 22);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnOk = new JButton("Ok");
-		btnOk.setBounds(293, 306, 97, 25);
-		contentPane.add(btnOk);
+		JButton btnSearch = new JButton("Rechercher");
+		btnSearch.setBounds(558, 306, 136, 25);
+		contentPane.add(btnSearch);
 	}
 }
