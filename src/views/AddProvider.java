@@ -63,8 +63,8 @@ public class AddProvider extends JFrame {
 		scrollPane.setBounds(69, 187, 627, 180);
 		contentPane.add(scrollPane);
 		
-		JList list = new JList();
-		scrollPane.setViewportView(list);
+		JList list_viewProvider = new JList();
+		scrollPane.setViewportView(list_viewProvider);
 		
 		JLabel lblFournisseur = new JLabel("Fournisseur");
 		lblFournisseur.setFont(new Font("Tahoma", Font.BOLD, 18));

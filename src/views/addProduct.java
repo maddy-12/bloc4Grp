@@ -119,8 +119,8 @@ public class addProduct extends JFrame {
 		scrollPane.setBounds(36, 428, 482, 261);
 		contentPane.add(scrollPane);
 		
-		JList list = new JList();
-		scrollPane.setViewportView(list);
+		JList list_viewProduct = new JList();
+		scrollPane.setViewportView(list_viewProduct);
 		
 		JButton btnMettreJour = new JButton("Mettre \u00E0 jour");
 		btnMettreJour.setBounds(138, 716, 131, 25);

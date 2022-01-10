@@ -75,8 +75,8 @@ public class addOrder extends JFrame {
 		scrollPane.setBounds(53, 342, 641, 180);
 		contentPane.add(scrollPane);
 		
-		JList list = new JList();
-		scrollPane.setViewportView(list);
+		JList list_viewOrder = new JList();
+		scrollPane.setViewportView(list_viewOrder);
 		
 		txt_OrderProductName = new JTextField();
 		txt_OrderProductName.setBounds(177, 114, 490, 22);
